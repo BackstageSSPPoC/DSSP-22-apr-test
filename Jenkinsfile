@@ -2,7 +2,7 @@
 //     agent any
 
 //     environment {
-//         APP_NAME = "DSSP-22-apr-test ".toLowerCase()
+//         APP_NAME = "DSSP-22-apr-test".toLowerCase()
 //         DOCKER_IMAGE = "chaitanyapandeygspann/${APP_NAME}"
 //         DOCKER_TAG = "1.0.${BUILD_NUMBER}"
 //         IMAGE_TAG = "${DOCKER_IMAGE}:${DOCKER_TAG}"
@@ -111,7 +111,7 @@
 //     agent any
 
 //     environment {
-//         APP_NAME = "DSSP-22-apr-test ".toLowerCase().trim()
+//         APP_NAME = "DSSP-22-apr-test".toLowerCase().trim()
 //         DOCKER_IMAGE = "chaitanyapandeygspann/${APP_NAME}"
 //         DOCKER_TAG = "1.0.${BUILD_NUMBER}"
 //         IMAGE_TAG = "${DOCKER_IMAGE}:${DOCKER_TAG}"
@@ -289,7 +289,7 @@ pipeline {
     agent any
     
     environment {
-        APP_NAME = "DSSP-22-apr-test ".toLowerCase().trim()
+        APP_NAME = "DSSP-22-apr-test".toLowerCase().trim()
         DOCKER_IMAGE = "chaitanyapandeygspann/${APP_NAME}"
         DOCKER_TAG = "1.0.${BUILD_NUMBER}"
         IMAGE_TAG = "${DOCKER_IMAGE}:${DOCKER_TAG}"

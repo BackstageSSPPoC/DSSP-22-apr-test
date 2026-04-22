@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 
 metadata:
-  name: DSSP-22-apr-test 
-  description: Service DSSP-22-apr-test 
+  name: DSSP-22-apr-test
+  description: Service DSSP-22-apr-test
 
   annotations:
-    github.com/project-slug: BackstageSSPPoC/DSSP-22-apr-test 
+    github.com/project-slug: BackstageSSPPoC/DSSP-22-apr-test
     backstage.io/techdocs-ref: dir:.
-    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-22-apr-test /main
-    argocd/app-name: dssp-22-apr-test 
-    backstage.io/kubernetes-id: DSSP-22-apr-test 
+    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-22-apr-test/main
+    argocd/app-name: dssp-22-apr-test
+    backstage.io/kubernetes-id: DSSP-22-apr-test
     backstage.io/kubernetes-namespace: default
 
 spec:
