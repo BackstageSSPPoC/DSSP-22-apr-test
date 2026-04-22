@@ -351,13 +351,16 @@ pipeline {
             }
         }
     
-        stage('Build Docker Image') {
-            steps {
-                sh 'docker build -t ${IMAGE_TAG} .'
-            }
-        }
-    
 // ================= CD STAGES =================
+
+        stage('Build Docker Image') { 
+                when { 
+                    expression { env.RUN_MODE == "cd" } 
+                } 
+                steps { 
+                    sh 'docker build -t ${IMAGE_TAG} .' 
+                } 
+        }
     
         stage('Login to Docker Hub') {
             when {
@@ -422,4 +425,7 @@ pipeline {
         }
     }
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
